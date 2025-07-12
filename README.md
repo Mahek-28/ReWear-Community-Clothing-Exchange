@@ -44,7 +44,10 @@ This app can be deployed on platforms like **Vercel**, **Netlify**, or your pref
 
 ## ✨ Author
 
-Developed with ❤️ by **Mahek Rana,Ayushi patel and Krisha gajera**
+Developed with ❤️ by **
+Mahek Rana,
 email:kinjalrana183@gmail.com
+Ayushi patel,
 email:ayushiipatel14@gmail.com
+Krisha gajera
 email:krishagajera925@gmail.com
