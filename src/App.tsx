@@ -6,6 +6,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { AuthProvider, useAuth } from "./hooks/useAuth";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import LandingPage from "./pages/LandingPage";
 import Browse from "./pages/Browse";
 import Dashboard from "./pages/Dashboard";
@@ -129,6 +130,7 @@ const AppContent = () => (
       {/* Catch-all route */}
       <Route path="*" element={<NotFound />} />
     </Routes>
+   <Footer />
   </div>
 );
 
