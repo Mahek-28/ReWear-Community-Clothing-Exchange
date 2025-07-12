@@ -1,73 +1,47 @@
-# Welcome to your Lovable project
+# ReWear – Community Clothing Exchange
 
-## Project info
+ReWear is a web-based platform that promotes sustainable fashion by enabling users to donate, exchange, or receive clothes with others in their community. It encourages reuse, reduces waste, and fosters a sharing economy.
 
-**URL**: https://lovable.dev/projects/53dfca5b-91a1-404b-a4fe-9f77987a4e21
+## 🌟 Features
 
-## How can I edit this code?
+- 👕 Browse clothing items shared by others
+- ➕ Add your own clothes for donation or exchange
+- 🔍 Search and filter by category, size, gender, and location
+- 👤 User authentication and dashboard for managing items
+- 📦 Request and respond to clothing offers
 
-There are several ways of editing your application.
+## 🚀 Tech Stack
 
-**Use Lovable**
+- **Frontend**: React, TypeScript, Tailwind CSS, shadcn-ui
+- **Build Tool**: Vite
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/53dfca5b-91a1-404b-a4fe-9f77987a4e21) and start prompting.
+## 💻 Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+To run the project locally:
 
-**Use your preferred IDE**
+```bash
+# Step 1: Clone the repository
+git clone https://github.com/Mahek-28/ReWear-Community-Clothing-Exchange.git
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+# Step 2: Navigate into the project directory
+cd ReWear-Community-Clothing-Exchange
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+# Step 3: Install dependencies
+npm install
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Step 4: Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## 📦 Deployment
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+This app can be deployed on platforms like **Vercel**, **Netlify**, or your preferred hosting provider. To deploy:
 
-**Use GitHub Codespaces**
+- Push the project to GitHub
+- Connect the GitHub repo to your hosting platform
+- Set the build command to: `npm run build`
+- Set the output directory to: `dist`
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## ✨ Author
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/53dfca5b-91a1-404b-a4fe-9f77987a4e21) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Developed with ❤️ by **Mahek Rana,Ayushi patel and Krisha**
