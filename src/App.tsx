@@ -16,6 +16,7 @@ import HowItWorks from "./pages/HowItWorks";
 import About from "./pages/About";
 import Settings from "./pages/Settings";
 import Favorites from "./pages/Favorites";
+import Community from "./pages/Community";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -35,7 +36,7 @@ const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
   }
   
   if (!user) {
-    return <Navigate to="/auth" />;
+    return <Navigate to="/auth" replace />;
   }
   
   return <>{children}</>;
@@ -56,7 +57,7 @@ const PublicRoute = ({ children }: { children: React.ReactNode }) => {
   }
   
   if (user) {
-    return <Navigate to="/" />;
+    return <Navigate to="/dashboard" replace />;
   }
   
   return <>{children}</>;
@@ -66,11 +67,14 @@ const AppContent = () => (
   <div className="min-h-screen bg-white">
     <Navbar />
     <Routes>
+      {/* Public routes */}
       <Route path="/" element={<LandingPage />} />
       <Route path="/browse" element={<Browse />} />
       <Route path="/how-it-works" element={<HowItWorks />} />
       <Route path="/about" element={<About />} />
       <Route path="/item/:id" element={<ItemDetail />} />
+      
+      {/* Auth route - only for non-authenticated users */}
       <Route 
         path="/auth" 
         element={
@@ -79,6 +83,8 @@ const AppContent = () => (
           </PublicRoute>
         } 
       />
+      
+      {/* Protected routes - only for authenticated users */}
       <Route 
         path="/dashboard" 
         element={
@@ -111,7 +117,16 @@ const AppContent = () => (
           </ProtectedRoute>
         } 
       />
-      {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+      <Route 
+        path="/community" 
+        element={
+          <ProtectedRoute>
+            <Community />
+          </ProtectedRoute>
+        } 
+      />
+      
+      {/* Catch-all route */}
       <Route path="*" element={<NotFound />} />
     </Routes>
   </div>
